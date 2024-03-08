@@ -11,7 +11,7 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('Music Player')
 
 
-music_file = "moment-14023.mp3"
+music_file = "data/sounds/moment-14023.mp3"
 pygame.mixer.music.load(music_file)
 
 music_length = pygame.mixer.Sound(music_file).get_length()
