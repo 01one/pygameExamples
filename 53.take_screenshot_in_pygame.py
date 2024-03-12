@@ -1,7 +1,7 @@
 import pygame
 import sys
 from pygame.locals import *
-
+import datetime
 pygame.init()
 clock = pygame.time.Clock()
 screen = pygame.display.set_mode((400, 400), RESIZABLE)
@@ -50,7 +50,12 @@ while game_running:
 		elif event.type == MOUSEBUTTONDOWN:
 			mouse_pos = pygame.mouse.get_pos()
 			if button_rect.collidepoint(mouse_pos):
+				current_datetime = datetime.datetime.now()
+				current_time = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
 				#When the button clicked it will save the screenshot
-				pygame.image.save(screen, "screenshot.png")
+				#pygame.image.save(screen, "screenshot.png")
+				pygame.image.save(screen, f"screenshot_{current_time}.png") 
 
-				print("Screenshot saved as screenshot.png")
+				#print("Screenshot saved as screenshot.png")
+				print(f"Screenshot saved as screenshot_{current_time}.png")
+	
