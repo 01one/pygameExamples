@@ -1,3 +1,9 @@
+# *Before running the code
+#  PC without higher configuration(CPU, RAM ) may not handle this program...
+#  so if you run the program without modest performance PC,  start with changing the variable value 100 or 1000 bouncing ball
+#  for example total_ball_number=100 
+
+
 import pygame,sys,random
 from pygame.locals import*
 pygame.init()
