@@ -34,6 +34,9 @@ class BouncingBall():
 			self.horizontal_speed *= -1
 		if self.display_position_y+ self.circle_radius >= display_y or self.display_position_y- self.circle_radius <= 0:
 			self.vertical_speed *=-1
+			
+# *****************Update the total number of bouncing ball **************
+# total_ball_number=100 
 
 total_ball_number=10000
 list_of_balls=[BouncingBall() for i in range(total_ball_number)]
