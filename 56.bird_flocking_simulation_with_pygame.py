@@ -38,12 +38,12 @@ class FlyingBird():
             self.vertical_speed *= -1
 
 
-total_bird_number = 1000
+total_bird_number = 100
 list_of_birds = [FlyingBird() for _ in range(total_bird_number)]
 
 game_running = True
 while game_running:
-    clock.tick(60)
+    clock.tick(30)
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
