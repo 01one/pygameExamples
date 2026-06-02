@@ -9,9 +9,6 @@
 
 
 
-# I made even larger python project(serverside) which is currently on google play ( not paygame , its native andorid currently)
-
-https://play.google.com/store/apps/details?id=com.purnorup.mitro
 
 
 # Also I share programming related projects on youtube
